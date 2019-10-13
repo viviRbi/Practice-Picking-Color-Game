@@ -22,7 +22,7 @@ body {
 
 #container {
   max-width: 600px;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 /*#####################################*/
@@ -74,9 +74,19 @@ button {
 button:hover {
   color: white;
   background: steelblue;
+  border-radius: 5%;
 }
 
 .selected {
   color: white;
   background: steelblue;
+}
+
+#guess {
+  position: relative;
+  color: lightblue;
+  margin: 20% auto;
+  width: 100%;
+  font-size: 125%;
+  font-weight: 300;
 }

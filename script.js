@@ -181,3 +181,25 @@ function randomColor(){
 // 		squares[i].style.display = "block";
 // 	}
 // });
+
+
+
+//Guessing number game
+function guessGame(){
+	//creat secret number
+	var secretNumber = Math.floor(Math.random()*10);
+
+	//ask user for guess
+	var guess = Number(prompt("Guess a number from 1 to 9"));
+
+	//compare
+	if(guess === secretNumber) {
+		alert("You got it right!");
+	}else if (guess > secretNumber){
+		alert("Too high");
+	}else {
+		alert("Too low");
+		}
+	}
+
+document.querySelector("#guess").addEventListener("click",guessGame);
